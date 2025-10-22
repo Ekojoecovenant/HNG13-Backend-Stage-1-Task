@@ -1,0 +1,36 @@
+{
+  "name": "hng13-backend-stage-1-task",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": [
+    "hng",
+    "internship",
+    "task",
+    "string",
+    "analyser",
+    "intern"
+  ],
+  "homepage": "https://github.com/Ekojoecovenant/HNG13-Backend-Stage-1-Task#readme",
+  "bugs": {
+    "url": "https://github.com/Ekojoecovenant/HNG13-Backend-Stage-1-Task/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ekojoecovenant/HNG13-Backend-Stage-1-Task.git"
+  },
+  "license": "MIT",
+  "author": "ekojoecovenant",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0"
+  }
+}

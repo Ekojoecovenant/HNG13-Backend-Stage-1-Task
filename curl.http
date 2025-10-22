@@ -1,0 +1,28 @@
+# Add a string
+POST http://localhost:5009/strings
+Content-Type: application/json
+
+{"value": "zzz"}
+# {"value": "pusherehsup"}
+# {"value": "A man a plan a canal Panama"}
+# {"value": "Ama"}
+
+
+###
+# Get a particular string
+GET http://localhost:5009/strings/Ama
+# GET http://localhost:5009/strings/A man a plan a canal Panama
+
+###
+# Get a string with filters
+GET http://localhost:5009/strings?is_palindrome=true&min_length=3&max_length=20&word_count=1&contains_character=a
+
+###
+# Get a string filtered by natural language
+GET http://localhost:5009/strings/filter-by-natural-language?query=strings containing the letter z
+# GET http://localhost:5009/strings/filter-by-natural-language?query=palindromic strings that contain the first vowel
+# GET http://localhost:5009/strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
+# GET http://localhost:5009/strings/filter-by-natural-language?query=all%20single%20word%20palindromic%20strings
+
+###
+DELETE http://localhost:5009/strings/Ama

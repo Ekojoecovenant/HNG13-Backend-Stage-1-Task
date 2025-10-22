@@ -24,6 +24,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Nothing to Build\"",
     "start": "node server.js",
     "dev": "nodemon server.js"
   },
